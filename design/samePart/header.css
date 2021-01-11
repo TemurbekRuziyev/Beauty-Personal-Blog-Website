@@ -1,0 +1,157 @@
+/*Large screens*/
+
+#Header {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+    grid-template-columns: 20% 50% 30%;
+    grid-template-areas: 'logo nav sign';
+    background-color: white;
+}
+
+.logo {
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+}
+
+.logo h5 {
+    font-family: "DINPro-CondBlack", sans-serif;
+    font-size: 24px;
+    margin: 0;
+    font-style: italic;
+}
+
+.Navbar {
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Navbar .nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.nav li {
+    margin: 0 20px;
+}
+
+.nav li a {
+    font-family: "Barlow-MediumItalic", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.Sign {
+    grid-area: sign;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.Sign button {
+    padding: 5px 10px;
+    margin-right: 20px;
+    font-family: 'Montserrat-Medium', sans-serif;
+    border: 1px solid #c1f3bb;
+    border-radius: 12px 3px 12px 3px;
+    overflow: hidden;
+    outline: 0;
+    transition: background-color 0.5s;
+}
+
+.Sign a {
+    text-decoration: none;
+    color: black;
+}
+
+.Sign button:hover, .sign button:focus {
+    background-color: #51f236;
+}
+
+.Sign button:hover {
+    cursor: pointer;
+}
+
+
+/* Anything smaller than first breakpoint 520px */
+@media (max-width: 600px) {
+    #Header {
+        padding: 0;
+        display: grid;
+        grid-template-columns: 20% 50% 30%;
+    }
+
+    .logo h5 {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .logo img {
+        width: 35px;
+    }
+
+    .nav li {
+        margin: 0 5px;
+    }
+
+    .nav li a {
+        font-size: 13px;
+    }
+
+    .Sign button {
+        margin-right: 5px;
+        padding: 2px;
+    }
+
+    .Sign button a {
+        font-size: 4px;
+    }
+
+    .Navbar ul {
+        padding-left: 0;
+    }
+}
+
+/*Medium screens*/
+@media (min-width: 601px)  and (max-width: 929px) {
+    .logo h5 {
+        font-size: 18px;
+        line-height: 17px;
+    }
+
+    .nav li a {
+        font-size: 16px;
+    }
+    .Navbar .nav {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .Sign {
+        justify-content: space-evenly;
+    }
+
+    .Sign button {
+        margin: 0;
+        padding: 2px 5px;
+    }
+
+    .nav li {
+        margin: 0;
+    }
+
+    .Sign button:nth-child(2) {
+        margin-right: 2px;
+    }
+}

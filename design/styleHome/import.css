@@ -1,0 +1,9 @@
+@import url("grid.css");
+@import url("../samePart/header.css");
+@import url("main.css");
+@import url("aside.css");
+@import url('section.css');
+@import url("article.css");
+@import url("../samePart/footer.css");
+
+

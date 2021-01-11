@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BLOG</title>
+    <link rel="stylesheet" href="design/styleBlog/import.css">
+</head>
+<body>
+<div class="container">
+
+    <!--Start header content-->
+    <header id="Header">
+        <div class="logo">
+            <img src="image/logo.png" alt="This site logo">
+            <h5>BLOG WEBSITE</h5>
+        </div>
+        <navbar class="Navbar">
+            <ul class="nav">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="blogs.html">BLOGS</a></li>
+                <li><a href="blog.html">ABOUT</a></li>
+            </ul>
+        </navbar>
+        <div class="Sign">
+            <button type="button"><a href="#">GO MY BLOG</a></button>
+            <button type="button" id="SignUp"><a href="#">Join Us</a></button>
+        </div>
+    </header>
+    <!--End header content-->
+
+    <!--Start main content-->
+    <main id="main">
+        <h3>Why we use ReactJs?</h3>
+        <div class="avatar">
+            <figure>
+                <img src="image/Coder%200521.jpg" alt="Avatar img">
+                <figcaption>
+                    Temurbek Ro'ziyev <br>
+                    <i>Full Stack Web Developer, Python developer, Java Developer</i>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="blog-article">
+            Learn React
+                People come to React from different backgrounds and with different learning styles. Whether you prefer a
+                more theoretical or a practical approach, we hope you’ll find this section helpful <br> <br>
+
+                <ul>
+                    <li>If you prefer to <b>learn by doing</b>, start with our <u>practical tutorial</u>.</li>
+                    <li>If you prefer to <b>learn concepts step by step</b>, start with our <u>guide to main concepts.</u></li>
+                </ul> <br>
+
+                Like any unfamiliar technology, React does have a learning curve. With practice and some patience, you
+                will get the hang of it.
+            <br>
+            <br>
+                <b>First Examples</b>
+            <br>
+            <br>
+                The React homepage contains a few small React examples with a live editor. Even if you don’t know
+                anything about React yet, try changing their code and see how it affects the result.
+            <br>
+
+            <p>
+                React components can have state by setting this.state in their constructors. this.state should be
+                considered as private to a React component that it’s defined in. Let’s store the current value of the
+                Square in this.state, and change it when the Square is clicked.
+
+                First, we’ll add a constructor to the class to initialize the state:
+            </p>
+            <div class="note">
+                <b>Note</b>
+                <br>
+                <br>
+                In JavaScript classes, you need to always call <mark>super</mark> when defining the <mark>constructor</mark> of a subclass. All
+                React component classes that have a constructor should start with a <mark>super(props)</mark> call.
+            </div>
+        </div>
+        <div class="subscribe">
+            <label>
+                <input type="text" placeholder="Your email">
+            </label>
+            <button type="button">Subscribe</button>
+        </div>
+    </main>
+    <!--End the main content-->
+
+
+    <!--    Footer part is same all pages. So this part css part separate-->
+    <!--Start footer content-->
+    <footer id="footer">
+        <div class="logo-footer">
+            <a href="home.html">
+                <img src="image/logo.png" alt="Logo images">
+            </a>
+        </div>
+        <div class="footer-menu">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="blogs.html">BLOGS</a></li>
+                <li><a href="blog.html">ABOUT</a></li>
+                <li><a href="blog.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="follow">
+            <div class="title">
+                <h3>OUR SOCIALS</h3>
+            </div>
+            <div class="type">
+                <a href="https://facebook.com"><img src="icon/icons-8-facebook@3x.png" alt="For facebook"></a>
+                <a href="https://LinkedIn"><img src="icon/icons-8-linkedin@3x.png" alt="LinkedIn"></a>
+                <a href="https://twitter.com"><img src="icon/icons-8-twitter-squared@3x.png" alt="Twitter"></a>
+            </div>
+        </div>
+    </footer>
+    <!--End footer content-->
+</div>
+</body>
+</html>

@@ -1,0 +1,183 @@
+/*Large Screens*/
+
+#homeMain {
+    padding: 20px 5px 0 20px;
+    display: flex;
+}
+
+#line {
+    width: 80%;
+    height: 3px;
+    background-color: #dde1e4;
+}
+
+#navigate {
+    font-family: "Barlow Regular", sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 15px;
+
+}
+
+#navigate a {
+    text-decoration: none;
+}
+
+#welcome {
+    font-family: "Barlow-MediumItalic", sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+#name {
+    font-family: "Barlow Medium", sans-serif;
+    font-size: 25px;
+}
+
+
+#mainLeft {
+    width: 57%;
+}
+
+#mainRight {
+    margin-top: 60px;
+    margin-left: auto;
+    width: 43%;
+}
+
+
+#mainLeft .aboutMine {
+    font-family: "Barrow Regular", sans-serif;
+    font-size: 18px;
+    width: 80%;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 15px auto;
+}
+
+.input input:not([type='file']) {
+    height: 35px;
+    font-size: 20px;
+    border-radius: 25px;
+    outline: 0;
+    border: 0;
+    padding-left: 10px;
+}
+
+.input label {
+    font-family: "Barlow Medium", sans-serif;
+    margin-bottom: 20px;
+}
+
+.input:nth-child(4) input {
+    padding: 10px 20px;
+    background-color: #f2c7b9;
+    color: white;
+}
+
+
+#submit {
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.3);
+    outline: 0;
+    border: 2px solid greenyellow;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+#submit:hover, #submit:active {
+    cursor: pointer;
+    background-color: #51f236;
+    transition: background-color 0.3s linear;
+}
+
+
+/* Anything smaller than first breakpoint 600px */
+@media (max-width: 600px) {
+    #homeMain {
+        padding: 0;
+    }
+
+    #line {
+        height: 1px;
+    }
+
+    #navigate {
+        font-size: 10px;
+    }
+
+    #welcome {
+        font-size: 25px;
+    }
+
+    #name {
+        font-size: 15px;
+    }
+
+    #mainLeft .aboutMine {
+        font-size: 10px;
+    }
+
+    .input {
+        width: 95%;
+        margin-left: 5px;
+    }
+
+    .input input:not([type='file']) {
+        height: 20px;
+        font-size: 14px;
+        border-radius: 5px;
+        outline: 0;
+        border: 0;
+        padding-left: 5px;
+    }
+    .input label {
+        font-family: "Barlow Medium", sans-serif;
+        margin-bottom: 8px;
+        font-size: 10px;
+    }
+    .input:nth-child(4) input {
+        padding: 5px 8px;
+        background-color: #f2c7b9;
+        color: white;
+    }
+    #submit {
+      padding: 5px 5px;
+        line-height: 2px;
+    }
+}
+
+
+/*Medium screens*/
+@media (min-width: 601px)  and (max-width: 929px) {
+    /*Style for mainLeft part*/
+    #navigate a {
+        font-size: 14px;
+    }
+    .line {
+        height: 2px;
+    }
+    #welcome {
+        font-size: 35px;
+    }
+    #name {
+        font-size: 20px;
+    }
+    #mainLeft .aboutMine {
+        font-size: 15px;
+    }
+
+    /*Style for mainRight part*/
+    #mainRight .input{
+        width: 90%;
+    }
+    .input label {
+        font-size: 14px;
+    }
+}

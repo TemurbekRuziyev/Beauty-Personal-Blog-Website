@@ -1,0 +1,92 @@
+#homeArticle {
+    display: flex;
+    flex-direction: column;
+    margin-block-end: auto;
+    margin-top: 60px;
+}
+
+#homeArticle h4 {
+    font-family: "Barrow Regular", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 5px;
+}
+#homeArticle .line {
+    width: 90%;
+    background-color: #dde1e4;
+    height: 3px;
+}
+
+
+
+
+#homeArticle  button {
+    border: 2px solid #51f236;
+    outline: 0;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 60%;
+    margin-top: 15px;
+
+}
+#homeArticle  button a {
+    font-family: "Barrow Regular", sans-serif;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+#homeArticle .coursesToLearn, #homeArticle .skillsToLearn {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Anything smaller than first breakpoint 600px */
+@media (max-width: 600px) {
+    #homeArticle {
+        margin-top: 38px;
+    }
+    #homeArticle > h4 {
+        font-size: 14px;
+    }
+    #homeArticle .line {
+        width: 95%;
+        height: 1px;
+    }
+    #homeArticle .coursesToLearn, #homeArticle .skillsToLearn {
+        margin-top: 20px;
+    }
+    #homeArticle .coursesToLearn h4, #homeArticle .skillsToLearn h4 {
+        font-size: 13px;
+    }
+    #homeArticle button a {
+        font-size :9px;
+    }
+    .skillsToLearn button {
+        font-size: 9px;
+    }
+}
+
+
+
+
+/* Medium Screens */
+@media (min-width: 601px) and (max-width: 929px) {
+    #homeArticle {
+        margin-top: 26px;
+    }
+    #homeArticle h4 {
+        font-size: 18px;
+    }
+    #homeArticle .line {
+        height: 2px;
+    }
+    #homeArticle button a {
+        font-size: 14px;
+    }
+}

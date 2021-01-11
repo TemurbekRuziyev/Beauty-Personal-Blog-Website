@@ -1,0 +1,256 @@
+
+
+#homeAside {
+    background-color: #f8fcff;
+    padding: 0 70px;
+    margin-top: 30px;
+
+}
+
+#homeAside h3 {
+    font-family: 'Barlow Regular', sans-serif;
+    font-size: 39px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#homeAside h3 mark {
+    font-family: "Barlow Regular", sans-serif;
+    letter-spacing: -2px;
+    background-color: #f8fcff;
+    font-weight: 500;
+}
+
+#homeAside  p {
+    font-family: 'Barlow Medium', sans-serif;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.skill {
+    display: flex;
+}
+
+.skill-list {
+    width: 50%;
+    justify-self: flex-start;
+}
+
+.skill-list:first-child {
+    border-right: 1px solid #e7ebee;
+}
+
+.skill-list:nth-child(2) {
+    margin-left: 50px;
+}
+
+.skill-list h2 {
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: 'Barlow Medium', sans-serif;
+}
+
+.skill-list ul {
+    padding-left: 0;
+}
+
+#homeAside .skill-list > ul > li {
+    padding-left: 0;
+    margin-bottom: 40px;
+    list-style-type: none;
+    font-size: 22px;
+    font-family: 'Barlow Medium', sans-serif;
+}
+
+.skill-list img {
+    padding-right: 24px;
+    margin-top: 11px;
+}
+
+.knowledge {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.knowledge h5 {
+    text-align: center;
+    font-family: "Barlow Medium", sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.knowledge .know-list {
+    display: flex;
+    margin: 20px 10px;
+    justify-content: space-evenly;
+}
+
+.knowledge .know-list .know > img {
+    width: 30%;
+    object-fit: contain;
+}
+.know-list .know .know-article > h4 {
+    font-family: "Barlow Medium", sans-serif;
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.know {
+    display: flex;
+    width: 48%;
+    justify-content: space-between;
+    border: 1px solid #e7ebee;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px 3px #dce0e3;
+}
+
+.know-article {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+.know-article h4 {
+    margin-bottom: 10px;
+}
+#homeAside .know-article .course-content {
+    font-size: 15px;
+    font-family: "Barlow Regular", sans-serif;
+
+}
+
+.see-know {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eff3f6;
+    border: 1px solid #ced2d5;
+    border-radius: 20px;
+    justify-content: center;
+    padding: 0 8px;
+}
+
+.see-know > img {
+    margin: 10px 0 0 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.see-know span {
+    font-family: "Barlow Regular", sans-serif;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+
+/* Anything smaller than first breakpoint 600px */
+@media (max-width: 600px) {
+    #homeAside {
+        padding: 0;
+    }
+    #homeAside > h3 {
+        font-size: 24px;
+    }
+    #homeAside > p {
+        font-size: 14px;
+    }
+    .skill-list h2 {
+        font-size: 14px;
+    }
+
+    #homeAside .skill-list > ul > li {
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+    .skill-list img {
+        width: 40px;
+    }
+    .skill-list:first-child {
+        padding-right: 15px;
+    }
+
+    .knowledge h5 {
+        font-size: 14px;
+    }
+    .know-article {
+        padding: 0;
+    }
+    .know {
+        border-radius: 10px;
+        width: 49%;
+    }
+    .knowledge .know-list {
+        margin: 10px 2px;
+        justify-content: space-between;
+    }
+    .know-list .know .know-article > h4 {
+        font-size: 15px;
+        margin: 5px 0 5px 5px;
+    }
+    #homeAside .know-article .course-content {
+        font-size: 10px;
+    }
+    .see-know {
+        padding: 0;
+        border-radius: 10px;
+    }
+    .see-know img {
+        width: 20px;
+        height: 20px;
+    }
+    .see-know span {
+        font-size: 10px;
+    }
+}
+
+
+
+
+/* Medium Screens */
+@media (min-width: 601px) and (max-width: 929px) {
+    #homeAside {
+        padding: 0 10px;
+    }
+    #homeAside h3 {
+        font-size: 31px;
+    }
+    #homeAside p {
+        font-size: 19px;
+    }
+    /*Style for SkillList*/
+    .skill-list h2 {
+        font-size: 19px;
+    }
+    #homeAside .skill-list > ul > li {
+        font-size: 18px;
+    }
+    .skill-list img {
+        width: 45px;
+    }
+
+    /*Style for Knowledge*/
+    .knowledge h5 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .know-article {
+        padding: 0 10px;
+    }
+    .know-list .know .know-article > h4 {
+        font-size: 22px;
+    }
+    .see-know {
+        padding: 0 3px;
+    }
+    .see-know > img {
+        width: 25px;
+        height: 25px;
+    }
+    .see-know span {
+        font-size: 12px;
+    }
+}
+

@@ -1,0 +1,205 @@
+#blogsArticle {
+    display: flex;
+    margin-top: 15px;
+    margin-block-end: auto;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#blogsArticle .search {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+}
+
+#blogsArticle .search label {
+    margin-bottom: 5px;
+    font-family: "Barrow Regular", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#blogsArticle .search input {
+    margin-top: 20px;
+    background-image: url("../../icon/search.svg");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding: 8px 10px 8px 35px;
+    font-size: 20px;
+    outline: 0;
+    border: 2px solid #dbdfe2;
+    border-radius: 15px;
+}
+
+.line {
+    width: 90%;
+    height: 3px;
+    background-color: #dde1e4;
+}
+
+#blogsArticle .popular-blogs {
+    padding-top: 60px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.popular-blogs .popular-blog {
+    border: 2px solid #dde1e4;
+    display: flex;
+    box-shadow: 2px 2px 3px 2px #e9edf0;
+    flex-direction: column;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.popular-blogs > h3 {
+    font-size: 20px;
+    font-family: "Barrow Regular", sans-serif;
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+.popular-blogs .popular-blog > h4 {
+    font-size: 16px;
+    font-family: "Barrow Regular", sans-serif;
+    margin: 10px 0;
+    font-weight: normal;
+}
+
+.popular-blogs .popular-blog figure {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+}
+
+.popular-blogs .popular-blog figure img {
+    width: 55px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.popular-blogs .popular-blog .date {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular-blogs .popular-blog figure figcaption {
+    font-family: "Barrow Regular", sans-serif;
+    font-size: 16px;
+}
+
+.popular-blogs .popular-blog .date p {
+    font-size: 15px;
+    margin: 9px 0;
+    font-family: "Barrow Regular", sans-serif;
+}
+
+.popular-blogs .popular-blog .date button {
+    padding: 5px 7px;
+    background-color: #f8fcff;
+    cursor: pointer;
+    outline: 0;
+    border: 2px solid rgba(148, 255, 94, 0.87);
+    transition: background-color 0.5s linear;
+}
+
+.popular-blogs .popular-blog .date button:hover {
+    background-color: rgba(148, 255, 94, 0.3);
+}
+
+
+/* Anything smaller than first breakpoint 600px */
+@media (max-width: 600px) {
+    #blogsArticle .search label {
+        font-size: 14px;
+    }
+
+    .line {
+        height: 1px;
+    }
+
+    #blogsArticle .search input {
+        background-position: 5px center;
+        padding: 6px 4px 5px 25px;
+        background-size: 16px;
+        font-size: 13px;
+        border-radius: 12px;
+    }
+
+    #blogsArticle .popular-blogs {
+        padding-top: 40px;
+    }
+
+    .popular-blogs > h3 {
+        font-size: 14px;
+    }
+
+    .popular-blogs .popular-blog > h4 {
+        font-size: 14px;
+    }
+
+    .popular-blogs .popular-blog figure img {
+        width: 45px;
+    }
+
+    .popular-blogs .popular-blog figure figcaption {
+        font-size: 12px;
+    }
+
+    .popular-blogs .popular-blog .date p {
+        font-size: 12px;
+    }
+
+    .popular-blogs .popular-blog .date button {
+        font-size: 12px;
+    }
+}
+
+
+/* Medium Screens */
+@media (min-width: 601px) and (max-width: 929px) {
+    #blogsArticle .search label {
+        font-size: 15px;
+    }
+
+    .line {
+        height: 2px;
+    }
+
+    #blogsArticle .search input {
+        background-position: 3px center;
+        background-size: 19px;
+        padding: 7px 9px 7px 30px;
+        font-size: 13px;
+    }
+    .popular-blogs > h3 {
+        font-size: 15px;
+    }
+    .popular-blogs .popular-blog > h4 {
+        font-size: 14px;
+    }
+    .popular-blogs .popular-blog figure img {
+        width: 47px;
+    }
+    .popular-blogs .popular-blog figure figcaption {
+        font-size: 13px;
+    }
+    .popular-blogs .popular-blog .date {
+        margin-top: 10px;
+    }
+    .popular-blogs .popular-blog .date p {
+        font-size: 12px;
+        margin-top: 2px;
+        margin-bottom: 0;
+    }
+    .popular-blogs .popular-blog .date button {
+        font-size: 12px;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+}

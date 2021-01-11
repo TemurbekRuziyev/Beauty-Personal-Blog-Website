@@ -1,0 +1,294 @@
+#homeSection {
+    margin-top: 20px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#homeSection .homeSectionName .line {
+    height: 3px;
+    width: 100%;
+    background-color: #dde1e4;
+}
+
+#homeSection .homeSectionName h4 {
+    font-family: "Barlow Regular", sans-serif;
+    font-size: 20px;
+    padding-bottom: 0;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.homeSectionBlog {
+    display: flex;
+    flex-direction: column;
+}
+
+.homeSectionBlog .sectionBlog {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.homeSectionBlog .sectionBlog .section-blog-left {
+    display: flex;
+    align-items: flex-end;
+    border: none;
+    width: 13%;
+    overflow: hidden;
+    border-bottom-right-radius: 30px;
+    border-right: 2px solid #DDE1E4;
+
+}
+
+.homeSectionBlog .sectionBlog .section-blog-left img {
+    width: 70px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.homeSectionBlog .sectionBlog .section-blog-right {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px 10px 20px;
+    width: 87%;
+    border-top: 2px solid #DDE1E4;
+    border-right: 2px solid #DDE1E4;
+    border-bottom: 2px solid #DDE1E4;
+}
+
+.section-blog-right .blog-sort {
+    display: flex;
+}
+
+.section-blog-right .blog-sort h4 {
+    font-family: "Barlow Medium", sans-serif;
+    margin: 10px 0 20px 20px;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.section-blog-right .blog-sort p {
+    margin-left: 20px;
+    font-family: "Barlow Medium", sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+
+.section-blog-right .section-blog-article {
+    padding: 10px 30px;
+}
+
+.section-blog-right .section-blog-article p {
+    font-family: "Montserrat-Medium", sans-serif;
+    font-size: 14px;
+}
+
+.section-blog-right .blog-sort img {
+    width: 55px;
+    object-fit: contain;
+}
+
+.section-blog-right .see-section-blog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dde1e4;
+    padding: 5px 10px;
+    /*width: 36%;*/
+    border-radius: 10px;
+    background-color: #e5e9ec;
+}
+
+.section-blog-right .see-content .see-section-blog img {
+    width: 24px;
+    margin: 0 0 0 15px;
+}
+
+.section-blog-right .see-content .see-section-blog img:hover {
+    cursor: pointer;
+}
+
+.section-blog-right .see-content .see-section-blog img:first-child {
+    width: 24px;
+    margin-left: 5px;
+}
+
+.section-blog-right .see-content {
+    display: flex;
+    padding-left: 30px;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.read-more button {
+    padding: 10px 25px;
+    background-color: #f8fcff;
+    cursor: pointer;
+    outline: 0;
+    border: 2px solid rgba(148, 255, 94, 0.87)
+}
+
+.read-more button a {
+    text-decoration: none;
+    font-size: 17px;
+    font-family: "Barlow Regular", sans-serif;
+}
+
+.section-blog-right .see-section-blog span {
+    margin-left: 5px;
+}
+
+
+/* Anything smaller than first breakpoint 600px */
+@media (max-width: 600px) {
+    #homeSection {
+        padding: 0;
+    }
+
+    #homeSection .homeSectionName h4 {
+        font-size: 14px;
+    }
+
+    #homeSection .homeSectionName .line {
+        height: 1px;
+        width: 95%;
+    }
+
+    .homeSectionBlog .sectionBlog .section-blog-right {
+        width: 80%;
+        padding: 0;
+    }
+
+    .homeSectionBlog .sectionBlog .section-blog-left img {
+        width: 40px;
+    }
+
+    .homeSectionBlog .sectionBlog .section-blog-left {
+        width: 20%;
+    }
+
+    .section-blog-right .blog-sort img {
+        width: 40px;
+    }
+
+    .section-blog-right .blog-sort h4 {
+        margin: 0 0 0 5px;
+        font-size: 17px;
+    }
+
+    .section-blog-right .blog-sort p {
+        margin: 5px 0 0 0;
+        font-size: 10px;
+    }
+
+    .section-blog-right .section-blog-article {
+        padding: 5px;
+    }
+
+    .section-blog-right .section-blog-article p {
+        font-size: 11px;
+    }
+
+    .section-blog-right .see-content {
+        padding-left: 5px;
+        margin: 0;
+    }
+
+    .read-more button {
+        padding: 5px;
+        line-height: 9px;
+    }
+
+    .read-more button a {
+        font-size: 9px;
+    }
+
+    .section-blog-right .see-section-blog {
+        padding: 0 0 3px 0;
+    }
+
+    .section-blog-right .see-content .see-section-blog img {
+        width: 15px;
+        margin-left: 5px;
+    }
+
+    .section-blog-right .see-content .see-section-blog img:first-child {
+        width: 15px;
+        margin-left: 5px;
+    }
+
+    .section-blog-right .see-section-blog span {
+        font-size: 9px;
+    }
+
+}
+
+
+/* Medium Screens */
+@media (min-width: 601px) and (max-width: 929px) {
+    #homeSection {
+        padding: 10px 0;
+    }
+
+    #homeSection .homeSectionName h4 {
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    #homeSection .homeSectionName .line {
+        height: 2px;
+    }
+
+    /*Style for Left part of Section*/
+    .homeSectionBlog .sectionBlog .section-blog-left {
+        width: 20%;
+    }
+
+    .homeSectionBlog .sectionBlog .section-blog-left img {
+        width: 60px;
+    }
+
+    /*Style for Right part of Section*/
+    .homeSectionBlog .sectionBlog .section-blog-right {
+        width: 80%;
+        padding: 0;
+    }
+
+    .section-blog-right .blog-sort h4 {
+        font-size: 24px;
+    }
+
+    .section-blog-right .blog-sort p {
+        font-size: 14px;
+    }
+
+    .section-blog-right .section-blog-article {
+        padding: 10px;
+    }
+
+    .section-blog-right .see-content {
+        padding-left: 0;
+    }
+
+    .read-more button {
+        padding: 6px 6px;
+
+    }
+
+    .read-more button a {
+        font-size: 15px;
+    }
+    .section-blog-right .see-content .see-section-blog img {
+        width: 20px;
+    }
+    .section-blog-right .see-content .see-section-blog img:first-child {
+        width: 20px;
+    }
+    .section-blog-right .see-section-blog span {
+        font-size: 13px;
+    }
+}

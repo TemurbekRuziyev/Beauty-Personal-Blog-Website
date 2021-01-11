@@ -1,0 +1,296 @@
+/*Large screens*/
+
+#blogsSection {
+    display: flex;
+    flex-direction: column;
+}
+
+#blogsSection > h4 {
+    font-family: "Barrow Regular", sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+
+#blogsSection > .line {
+    width: 100%;
+    height: 3px;
+    background-color: #dde1e4;
+}
+
+#blogsSection .blogsBlog {
+    display: flex;
+    margin-top: 35px;
+    border: 2px solid #dde1e4;
+    padding: 5px 5px;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px 2px #e7ebee;
+}
+
+#blogsSection .loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#blogsSection .loading button {
+    padding: 10px 25px;
+    width: fit-content;
+    margin-bottom: 15px;
+    outline: 0;
+    font-size: 17px;
+    font-family: "Barrow Regular", sans-serif;
+    background-color: #0ad25433;
+    border: 1px solid #DCDCDC;
+    margin-top: 30px;
+    transition: box-shadow 0.3s linear;
+}
+
+#blogsSection .loading button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 1px 1px #DCDCDC;
+    background-color: rgba(10, 244, 93, 0.16);
+}
+
+#blogsSection .blogsBlog > figure {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 10px;
+}
+
+.blogsBlog figure img {
+    width: 100%;
+}
+
+.blogsBlog figure figcaption {
+    font-size: 15px;
+    font-weight: normal;
+    font-family: "Barrow Regular", sans-serif;
+    margin-top: 15px;
+}
+
+.blogsBlog .blog-right-part {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 15px;
+}
+
+.blogsBlog .blog-right-part .blog-title h3 {
+    font-size: 25px;
+    font-weight: 500;
+    font-family: "Barrow Medium", sans-serif;
+    margin: 0;
+}
+
+.blogsBlog .blog-right-part .read-more {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.blogsBlog .blog-right-part .read-more button {
+    padding: 10px 25px;
+    background-color: #f8fcff;
+    cursor: pointer;
+    outline: 0;
+    border: 2px solid rgba(148, 255, 94, 0.87);
+    transition: background-color 0.5s linear;
+}
+
+.blogsBlog .blog-right-part .read-more button:hover {
+    background-color: rgba(148, 255, 94, 0.3);
+}
+
+.blogsBlog .blog-right-part .read-more button a {
+    text-decoration: none;
+    font-size: 17px;
+    font-family: "Barrow Regular", sans-serif;
+}
+
+.blogsBlog .blog-right-part .read-more .see-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #dcdcdc;
+    padding: 8px 10px;
+    border-radius: 10px;
+    background-color: #e5e9ec;
+}
+
+.blogsBlog .blog-right-part .read-more .see-info img {
+    width: 25px;
+    margin: 0 5px 0 10px;
+}
+
+.blogsBlog .blog-right-part .blog-article {
+
+}
+
+.blogsBlog .blog-right-part .blog-article p {
+    font-family: "Barrow Regular", sans-serif;
+    font-size: 15px;
+}
+
+.blogsBlog .blog-article p a {
+    color: black;
+}
+
+.blogsBlog .blog-right-part .author-info figcaption {
+    font-family: "Barrow Regular", sans-serif;
+    font-size: 18px;
+}
+
+.blogsBlog .blog-right-part .author-info figcaption i {
+    font-family: "Barlow Regular", sans-serif;
+    font-size: 14px;
+}
+
+.blogsBlog .blog-right-part .author-info figure {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    align-items: center;
+}
+
+.blogsBlog .blog-right-part .author-info figure img {
+    border-radius: 50%;
+    margin-right: 12px;
+    width: 70px;
+}
+
+
+/* Anything smaller than first breakpoint 600px */
+@media (max-width: 600px) {
+    #blogsSection > h4 {
+        font-size: 14px;
+        margin-top: 0;
+    }
+
+    #blogsSection > .line {
+        height: 1px;
+    }
+
+    #blogsSection .blogsBlog {
+        margin-top: 5px;
+    }
+
+    #blogsSection .blogsBlog:first-child {
+        margin-top: 15px;
+    }
+
+    .blogsBlog .blog-right-part {
+        width: 100%;
+        padding: 4px 10px;
+    }
+
+    .blogsBlog figure figcaption {
+        font-size: 11px;
+    }
+
+    .blogsBlog .blog-right-part .blog-title h3 {
+        font-size: 15px;
+    }
+
+    .blogsBlog .blog-right-part .blog-article p {
+        font-size: 11px;
+    }
+
+    .blogsBlog .blog-right-part .author-info figure img {
+        width: 45px;
+    }
+
+    .blogsBlog .blog-right-part .author-info figcaption {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .blogsBlog .blog-right-part .author-info figcaption i {
+        font-size: 10px;
+    }
+
+    .blogsBlog .blog-right-part .read-more button {
+        padding: 2px;
+    }
+
+    .blogsBlog .blog-right-part .read-more button a {
+        font-size: 9px;
+    }
+
+    .blogsBlog .blog-right-part .read-more .see-info img {
+        width: 15px;
+    }
+
+    .blogsBlog .blog-right-part .read-more .see-info {
+        padding: 5px 10px;
+    }
+
+    .see-info span {
+        font-size: 9px;
+    }
+
+    #blogsSection .loading button {
+        font-size: 12px;
+        padding: 8px 15px;
+        outline: 0;
+    }
+}
+
+
+/* Medium Screens */
+@media (min-width: 601px) and (max-width: 929px) {
+    #blogsSection > h4 {
+        font-size: 14px;
+        margin-bottom: 2px;
+    }
+
+    #blogsSection > .line {
+        height: 2px;
+    }
+
+    #blogsSection .blogsBlog > figure {
+        display: none;
+    }
+
+    .blogsBlog .blog-right-part .blog-title h3 {
+        font-size: 20px;
+    }
+
+    .blogsBlog .blog-right-part .blog-article p {
+        font-size: 14px;
+    }
+
+    .blogsBlog .blog-right-part .author-info figure img {
+        width: 60px;
+    }
+    .blogsBlog .blog-right-part .author-info figcaption {
+        font-size: 13px;
+        margin-top: 0;
+    }
+    .blogsBlog .blog-right-part .author-info figcaption i {
+        font-size: 13px;
+    }
+    .blogsBlog .blog-right-part .read-more button {
+        padding: 7px 10px;
+    }
+    .blogsBlog .blog-right-part .read-more button a {
+        font-size: 13px;
+    }
+    .blogsBlog .blog-right-part .read-more .see-info {
+        padding: 5px 10px;
+    }
+    .blogsBlog .blog-right-part .read-more .see-info img {
+        width: 21px;
+    }
+    .blogsBlog .blog-right-part .read-more .see-info span {
+        font-size: 12px;
+    }
+    #blogsSection .loading button {
+        padding: 5px 15px;
+        margin-bottom: 10px;
+        outline: 0;
+    }
+}

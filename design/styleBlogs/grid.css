@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+/*For all pages fonts*/
+@font-face {
+    font-family: "Barrow Regular";
+    src: url("../../font/Barlow-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Barlow-MediumItalic";
+    src: url("../../font/Barlow-MediumItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Barlow Medium";
+    src: url("../../font/Barlow-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Barlow-MediumItalic";
+    src: url("../../font/Barlow-MediumItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "DINPro-CondBlack";
+    src: url("../../font/DINPro-CondBlack_1.otf") format('truetype');
+}
+
+@font-face {
+    font-family: "DINPro-CondMedium_1";
+    src: url("../../font/DINPro-CondMedium_1.otf") format('truetype');
+}
+
+@font-face {
+    font-family: "Montserrat-Medium";
+    src: url("../../font/Montserrat-Medium.ttf") format('truetype');
+}
+
+body {
+    background-color: #f8fcff;
+}
+
+.container {
+    width: 90vw;
+    align-items: center;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 70% 30%;
+    grid-template-areas:
+            'hd hd'
+            'section article'
+            'ft ft';
+}
+
+
+header {
+    grid-area: hd;
+}
+section {
+    grid-area: section;
+}
+article {
+    grid-area: article;
+}
+footer {
+    grid-area: ft;
+}
+
+/* Anything smaller than first breakpoint 600px */
+@media (max-width: 600px) {
+    .container {
+        grid-auto-columns: 70% 30%;
+        grid-template-areas:
+                'hd hd'
+                'section section'
+                'article article'
+                'ft ft';
+    }
+}
+
+
+
+
+/* Medium Screens */
+@media (min-width: 601px) and (max-width: 929px) {
+
+}

@@ -1,0 +1,125 @@
+#main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+}
+
+#main h3 {
+    font-size: 30px;
+    font-family: "Barrow Regular", sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+#main .avatar figure {
+    display: flex;
+    align-items: center;
+}
+
+#main .avatar figure img {
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+#main .avatar figure figcaption {
+    font-size: 17px;
+    font-family: "Barlow Medium", sans-serif;
+}
+#main .avatar figcaption i {
+    font-size: 15px;
+}
+#main .blog-article {
+    padding: 20px 40px;
+}
+#main .blog-article  {
+    font-family: sans-serif;
+    font-size: 15px;
+}
+#main .blog-article .note {
+    background-color: rgba(255,229,100,0.3);
+    border-left: 5px solid #ffe564;
+    padding: 20px 35px;
+    line-height: 20px;
+}
+
+#main .subscribe {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.subscribe input {
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    border-radius: 20px 0 0 20px;
+    outline: 0;
+    border: 2px solid greenyellow;
+}
+.subscribe button {
+    height: 40px;
+    border-radius: 0 20px 20px 0;
+    border: 2px solid greenyellow;
+    outline: 0;
+    background-color: #14ff26;
+    cursor: pointer;
+}
+
+
+
+/* Anything smaller than first breakpoint 600px */
+@media (max-width: 600px) {
+    #main {
+        padding: 5px;
+    }
+    #main h3 {
+        font-size: 20px;
+    }
+    #main .avatar figure {
+        margin: 10px;
+    }
+    #main .avatar figure img {
+        width: 60px;
+    }
+    #main .avatar figure figcaption {
+        font-size: 12px;
+    }
+    #main .avatar figcaption i {
+        font-size: 11px;
+    }
+    #main .blog-article {
+        padding: 10px;
+        font-size: 10px;
+    }
+    #main .blog-article .note {
+        padding: 10px;
+        line-height: 14px;
+    }
+    .subscribe input {
+        font-size: 13px;
+        height: 35px;
+    }
+    .subscribe button {
+        font-size: 13px;
+        height: 35px;
+    }
+}
+
+
+
+
+/* Medium Screens */
+@media (min-width: 601px) and (max-width: 929px) {
+    #main h3 {
+        font-size: 23px;
+    }
+    #main .avatar figure img {
+        width: 70px;
+    }
+    #main .avatar figure figcaption {
+        font-size: 15px;
+    }
+    #main .blog-article {
+        font-size: 14px;
+    }
+}
